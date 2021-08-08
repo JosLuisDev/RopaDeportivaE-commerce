@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="moda, venta de ropa, ropa deportiva, ropa deportiva mujer">
+    <meta name="description" content="Venta de Ropa deportiva y accesorios deportivos en linea">
+    <link rel="icon" href="img/logo.png" type="imge/x-icon">
+    <script src="https://kit.fontawesome.com/8628899027.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Libre+Baskerville">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <!--Comienza navbar-->
+    <header class="bg-light">
+        <div class="contenedor">
+            <div class="row">
+                <article class="col-md-3 col-sm-12">
+                    <div class="header-logo text-center">
+                        <a href="index.html"><img src="img/logo.png"></a>
+                    </div>
+                </article>
+                <article class="col-md-6 col-sm-12 mt-lg-4">
+                    <nav class="row links-navbar">
+                        <div class="col-lg-4 col-md-12 text-center fs-4 fw-bold"><a href="productos.html">Products</a></div>
+                        <div class="col-lg-4 col-md-12 text-center fs-4 fw-bold"><a href="#">Offers</a></div>
+                        <div class="col-lg-4 col-md-12 text-center fs-4 fw-bold"><a href="contacto.html">Contact</a>
+                        </div>
+                    </nav>
+                </article>
+                <article class="col-md-3 col-sm-12 mt-lg-2">
+                    <div class="text-center my-3">
+                        <i class="fa fa-search px-2 fs-5"></i>
+                        <a href="login.html" class="px-2 fs-4 fw-bold">my account</a>
+                        <a href="cart.html"><i class="fa fa-cart-plus px-2 fs-5"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!--Termina navbar-->
+    </header>
+
+    <section class="container-fluid imagen-fondo">
+        <div class="container d-flex flex-column justify-content-center text-center text-light">
+            <h2 class="fw-bold fs-1">Contact</h2>
+            <div class="container-fluid d-flex d-inline text-center justify-content-center">
+                <a href="index.html" class="lead fs-2 me-2 pt-1 text-light">Home</a>
+                <p class="fs-1 fw-bold me-2">/</p>
+                <a href="contacto.html" class="lead fs-2 pt-1 text-light">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container d-flex flex-column justify-content-center seccion-height">
+        <div class="text-center">
+            <p class="fs-3 lead text-dark fw-bold m-0">Get in touch</p>
+            <h2 class="text-dark fs-1 fw-bold m-0">If You Yave Any Query, Please Contact Us</h2>
+        </div>
+    </section>
+
+    <!--Formulario-->
+    <div class="container-fluid bg-dark">
+        <div class="row align-items-center">
+            <div class="col-md-4 imagen-fondo contacto-form"></div>
+            <div class="col-md-8 d-flex flex-column justify-content-around">
+                <div class="">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name"
+                                required="required" data-validation-required-message="Please enter your name">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email"
+                                required="required" data-validation-required-message="Please enter your email">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                required="required" data-validation-required-message="Please enter a subject">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control" id="message" placeholder="Message" required="required"
+                                data-validation-required-message="Please enter your message"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary" type="submit" onclick=" return enviarFormulario();" value="Enviar" id="sendMessageButton">Send Message</button>
+                        </div>
+                    </form>
+                    <div id="error"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Comienza footer (solo con propiedades bootstrap)-->
+    <footer class="text-center text-white footer">
+        <section class="mb-3 pt-3">
+            <!--margin-bottom: 3 paddign-top: 3-->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <section>
+            <form>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-auto">
+                        <p class="pt-2">
+                            <strong>Sign up for our newsletter</strong>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <div class="form-outline form-white mb-4">
+                            <input type="email" id="form5Example2" class="form-control" />
+                            <label class="form-label" for="form5Example2">Email address</label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-light mb-4">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://www.facebook.com/luis.m7243">Luis Marquez</a>
+        </div>
+    </footer>
+    <!--Termina footer-->
+    <script src="js/fomularioValidacion.js"></script>
+</body>
+
+</html>
